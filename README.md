@@ -1,5 +1,7 @@
 # TypeScript Errors
 
+![image](https://user-images.githubusercontent.com/469989/219819760-9a898309-4409-43a2-9351-f6fba31d4068.png)
+
 ## Motivation
 
 TypeScript's strong type system allows for error detection during the design phase, rather than at runtime. This enables you to find bugs early in the development process.
