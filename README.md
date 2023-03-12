@@ -17,6 +17,17 @@ Feel free to contribute and provide solutions to yet unknown errors. All accepte
 - List of [all error messages](https://github.com/microsoft/TypeScript/blob/main/src/compiler/diagnosticMessages.json)
 - Matt Pocock's TypeScript error translator also has a list of [known errors](https://github.com/mattpocock/ts-error-translator/tree/main/packages/engine/errors)
 
+## Error Code Ranges
+
+All errors are categorized by the TypeScript team into [the following ranges](https://github.com/microsoft/TypeScript/wiki/Coding-guidelines#diagnostic-message-codes):
+
+- 1xxx range for syntactic messages
+- 2xxx for semantic messages
+- 4xxx for declaration emit messages
+- 5xxx for compiler options messages
+- 6xxx for command line compiler messages
+- 7xxx for `noImplicitAny` messages
+
 ## Writing sample code
 
 There are two ways to write code examples for the different TypeScript errors: **Markdown Code Blocks** and **Hexo Code Blocks**.
