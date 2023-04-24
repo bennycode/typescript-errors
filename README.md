@@ -74,7 +74,7 @@ console.log("We will be marked.");
 
 ### Format Markdown files
 
-Formatting your Markdown content is as simple as running `npm run prettier`. This process will also be automatically performed when you commit staged files.
+Formatting your Markdown content is as simple as running `npm run fix`. This process will also be automatically performed when you commit staged files.
 
 If you wish to prevent codeblocks from being formatted by Prettier, you can use the `<!-- prettier-ignore -->` directive:
 
