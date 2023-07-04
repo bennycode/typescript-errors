@@ -88,6 +88,24 @@ interface Animal {
 <!-- prettier-ignore-end -->
 ````
 
+The `prettier-ignore` directive is necessary when using the `codeblock` syntax:
+
+```md
+<!-- prettier-ignore-start -->
+{% codeblock mark:5 %}
+async function test() {
+  try {
+    await Promise.reject(new Error('This is a test'));
+  } catch (error: unknown) {
+    console.error(error.message);
+  }
+}
+
+test();
+{% endcodeblock %}
+<!-- prettier-ignore-end -->
+```
+
 ### Create internal links
 
 From every post you can link to pages on [typescript.tv](https://typescript.tv/).
