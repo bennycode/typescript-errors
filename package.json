@@ -1,11 +1,12 @@
 {
   "devDependencies": {
-    "@arkweid/lefthook": "^0.7.7",
+    "@evilmartians/lefthook": "^1.4.3",
     "prettier": "^2.8.8",
     "pretty-quick": "^3.1.3"
   },
   "scripts": {
     "fix": "npm run lint --fix",
-    "lint": "prettier --ignore-path .gitignore --loglevel error --write \"**/*.{md,yml}\""
+    "lint": "prettier --ignore-path .gitignore --loglevel error --write \"**/*.{md,yml}\"",
+    "reinstall": "lefthook install -a"
   }
 }
