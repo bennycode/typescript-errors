@@ -80,11 +80,13 @@ If you wish to prevent codeblocks from being formatted by Prettier, you can use 
 
 ````md
 <!-- prettier-ignore-start -->
+
 ```ts
 interface Animal {
   private name: string;
 }
 ```
+
 <!-- prettier-ignore-end -->
 ````
 
@@ -92,6 +94,7 @@ The `prettier-ignore` directive is necessary when using the `codeblock` syntax:
 
 ```md
 <!-- prettier-ignore-start -->
+
 {% codeblock mark:5 %}
 async function test() {
   try {
@@ -103,8 +106,11 @@ async function test() {
 
 test();
 {% endcodeblock %}
+
 <!-- prettier-ignore-end -->
 ```
+
+**Attention:** Make sure to always add a new line after `prettier-ignore-start` because of the bug "[Prettier range ignore doesn't work for codeblock](https://github.com/prettier/prettier/issues/14374)".
 
 ### Create internal links
 
